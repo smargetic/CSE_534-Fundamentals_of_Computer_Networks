@@ -1,0 +1,58 @@
+PART A:
+Command: ./mydig cnn.com A
+
+Output:
+ANSWER SECTION:
+cnn.com.                IN      A               151.101.129.67
+
+
+Query time: 172 msec
+WHEN: Sat Sep 26 19:49:44 2020
+MSG SIZE rcvd: 48
+
+Command: ./mydig cnn.com NS
+
+Output:
+
+ANSWER SECTION:
+cnn.com.                IN      NS              ns-1086.awsdns-07.org.
+
+
+Query time: 160 msec
+WHEN: Sat Sep 26 19:49:58 2020
+MSG SIZE rcvd: 57
+
+Command: ./mydig cnn.com MX
+
+Output:
+ANSWER SECTION:
+cnn.com.                IN      MX              10 mxa-00241e02.gslb.pphosted.com.
+
+
+Query time: 165 msec
+WHEN: Sat Sep 26 19:50:12 2020
+MSG SIZE rcvd: 37
+
+**********************************************************************************************
+PART B:
+Command: ./mydig internetstiftelsen.se A +dnssec
+
+Output:
+DNNSEC configured.
+159.253.30.216 is the verified answer.
+
+Command: ./mydig internetstiftelsen.se NS +dnssec
+
+Output:
+DNNSEC configured.
+ns.nic.se. is the verified answer.
+
+Command: ./mydig internetstiftelsen.se MX +dnssec
+
+Output:
+DNNSEC configured.
+5 mx2.iis.se. is the verified answer.
+
+Command:
+
+Output:
