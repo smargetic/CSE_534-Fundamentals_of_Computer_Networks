@@ -1,4 +1,12 @@
-My program is run using: ./mydig websiteName A
+General Instructions:
+Part A: Create dig function using python (same as dig from terminal).
+Part B: Implement DNSSEC on dig fuction.
+
+Detailed Instructions:
+On attached instruction file
+
+Explination of Program:
+My program is run using: ./mydig websiteName A (an executible was originally created, but was too large to upload on github)
 To implement dnssec, +dnssec will be added to the command line (ie. ./mydig websiteName A +dnssec)
 
 This means that both part A and part B of the assignment is written in the file labled mydig.py.
